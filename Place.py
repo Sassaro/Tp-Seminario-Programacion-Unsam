@@ -1,7 +1,3 @@
-from ast import arg
-import threading
-import time
-from tkinter import Y
 
 #Place hereda de Thread
 class Place:
@@ -10,8 +6,10 @@ class Place:
         #Tokens contenidos en el place
         self.tokens = tokens
 
+    #Se le agrgan tokens al place
     def getToken(self,tokens:int):
         self.tokens += tokens
-
+        
+    #Se quitan tokens al Place
     def removeToken(self,tokens:int):
         self.tokens -= tokens
